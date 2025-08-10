@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Hero from "./components/Hero";
 import Pastor from "./components/Pastor";
-import EventsCarousel from "./components/EventsCarousel";
+import EventsCarousel from "./components/Events";
 import ContactForm from "./components/ContactForm";
 import MemberForm from "./components/MemberForm";
 
