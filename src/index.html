@@ -1,158 +1,192 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Grace Community Church</title>
-  <meta name="description" content="Grace Community Church — worship, community, and service.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimony Assembly Church</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#">Grace Community Church</a>
-      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="hamburger"></span>
-      </button>
-      <nav id="primaryNav" class="primary-nav" role="navigation">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#sermons">Sermons</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <main id="main">
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1>Welcome to Testimony Assembly Church</h1>
-          <p>Join us for worship, community, and service. All are welcome.</p>
-          <div class="hero-cta">
-            <a class="btn" href="#services">Plan a Visit</a>
-            <a class="btn btn-outline" href="#contact">Contact Us</a>
-          </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Testimony Assembly Church</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning btn-sm ms-2" href="#donate">Donate</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="hero-media" aria-hidden="true">
-          <img src="assets/hero.jpg" alt="Congregation worshipping" loading="lazy">
+    </nav>
+
+    <!-- Hero Section with Background Image -->
+    <section id="hero" class="d-flex align-items-center justify-content-center text-center text-white">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Welcome to Testimony Assembly Church</h1>
+            <p class="lead mb-4">Loving God. Loving People. Making Disciples.</p>
+            <a href="#services" class="btn btn-primary btn-lg">Join Us</a>
         </div>
-      </div>
     </section>
 
-    <section id="about" class="container section about">
-      <div class="grid">
-        <div>
-          <h2>About Us</h2>
-          <p>Testimony Assembly Church is a welcoming community rooted in faith and service. We gather for worship, encourage spiritual growth, and serve our neighbours through outreach programs.</p>
-          <p><strong>Sunday Worship</strong> — 10:00 AM • <strong>Wednesday Bible Study</strong> — 7:00 PM</p>
+    <!-- About -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://source.unsplash.com/600x400/?church,community" alt="Church" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <h2>About Us</h2>
+                    <p>We are a vibrant faith community focused on worship, fellowship, and service. Everyone is welcome to join us in celebrating God’s love.</p>
+                </div>
+            </div>
         </div>
-        <div class="card">
-          <h3>Our Mission</h3>
-          <p>To love God, love people, and make disciples. We invest in families, youth, seniors, and community outreach.</p>
-        </div>
-      </div>
     </section>
 
-    <section id="services" class="section services">
-      <div class="container">
-        <h2>Services & Ministries</h2>
-        <div class="services-grid">
-          <article class="service-card">
-            <h3>Worship</h3>
-            <p>Contemporary and traditional services that focus on scripture and praise.</p>
-          </article>
-          <article class="service-card">
-            <h3>Children & Youth</h3>
-            <p>Safe, fun, and faith-building programs for children and teens.</p>
-          </article>
-          <article class="service-card">
-            <h3>Community Outreach</h3>
-            <p>Food drives, volunteering, and events reaching our neighbours.</p>
-          </article>
+    <!-- Services -->
+    <section id="services" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Sunday Worship</h5>
+                            <p class="card-text">Every Sunday at 10:00 AM — Come as you are and join us for inspiring messages and worship music.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Wednesday Bible Study</h5>
+                            <p class="card-text">Every Wednesday at 7:00 PM — Deepen your understanding of God’s Word in a small group setting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section id="events" class="section events">
-      <div class="container">
-        <h2>Upcoming Events</h2>
-        <ul class="events-list">
-          <li>
-            <time datetime="2025-12-20">Dec 20, 2025</time> — Christmas Concert
-          </li>
-          <li>
-            <time datetime="2025-04-05">Apr 5, 2025</time> — Community Lunch
-          </li>
-          <li>
-            <time datetime="2025-06-14">Jun 14, 2025</time> — Youth Retreat
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="sermons" class="section sermons">
-      <div class="container">
-        <h2>Recent Sermons</h2>
-        <div class="sermon-grid">
-          <article class="sermon">
-            <h3>Faith & Action</h3>
-            <p>Short excerpt from the sermon. <a href="#">Listen</a></p>
-          </article>
-          <article class="sermon">
-            <h3>Grace in Daily Life</h3>
-            <p>Short excerpt from the sermon. <a href="#">Watch</a></p>
-          </article>
+    <!-- Events Carousel -->
+    <section id="events" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Upcoming Events</h2>
+            <div id="eventsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner shadow rounded">
+                    <div class="carousel-item active">
+                        <img src="https://source.unsplash.com/1000x400/?christmas,church" class="d-block w-100" alt="Christmas Party">
+                        <div class="carousel-caption bg-dark bg-opacity-50 rounded p-2">
+                            🎄 Annual Christmas Concert — December 20th, 6:00 PM
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="https://source.unsplash.com/1000x400/?christmas,church" class="d-block w-100" alt="Cultural Day">
+                        <div class="carousel-caption bg-dark bg-opacity-50 rounded p-2">
+                            This is a special event where the congregation celebrates the diverse cultures within its community
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://source.unsplash.com/1000x400/?bible,study" class="d-block w-100" alt="Bible Study">
+                        <div class="carousel-caption bg-dark bg-opacity-50 rounded p-2">
+                            📖 Special Bible Study Series — Every Wednesday
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://source.unsplash.com/1000x400/?charity,help" class="d-block w-100" alt="Food Bank">
+                        <div class="carousel-caption bg-dark bg-opacity-50 rounded p-2">
+                            🥫 Food Bank — 1st Saturday of the month
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#eventsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#eventsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <div class="container contact-inner">
-        <div>
-          <h2>Contact Us</h2>
-          <p>Have questions or want to visit? Reach out — we'd love to connect.</p>
-          <address>
-            Grace Community Church<br>
-            123 Faith Ave, Springfield<br>
-            Email: <a href="mailto:info@gracechurch.org">info@gracechurch.org</a>
-          </address>
-          <p><strong>Office Hours:</strong> Mon–Fri 9:00–16:00</p>
+        <!-- Pastor Section -->
+    <section id="pastor" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Meet Our Pastor</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="https://source.unsplash.com/300x300/?pastor,man,portrait" 
+                         alt="Pastor John Smith" 
+                         class="img-fluid rounded-circle shadow">
+                </div>
+                <div class="col-md-8">
+                    <h4>Pastor Samson Oyerokun</h4>
+                    <p>Pastor Samson has been faithfully leading Grace Community Church for over 15 years, sharing the Gospel with love and humility.  
+                       His vision is to see every member grow spiritually and actively serve in the community.</p>
+                    <blockquote class="blockquote">
+                        <p>"Our mission is simple — to love God and love others with all that we have."</p>
+                    </blockquote>
+                </div>
+            </div>
         </div>
-
-        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-          <label>
-            <span class="label-text">Your name</span>
-            <input type="text" name="name" required>
-          </label>
-          <label>
-            <span class="label-text">Email</span>
-            <input type="email" name="email" required>
-          </label>
-          <label>
-            <span class="label-text">Message</span>
-            <textarea name="message" rows="5" required></textarea>
-          </label>
-          <button class="btn" type="submit">Send message</button>
-        </form>
-      </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> Grace Community Church • All rights reserved.</p>
-      <p class="small">Built with ❤️ — <a href="#">Privacy</a> · <a href="#">Accessibility</a></p>
-    </div>
-  </footer>
+    <!-- Donate Section -->
+    <section id="donate" class="bg-warning py-5 text-center">
+        <div class="container">
+            <h2>Support Our Mission</h2>
+            <p>Your generosity helps us spread God’s Word and serve our community.</p>
+            <a href="https://paypal.com" target="_blank" class="btn btn-dark btn-lg">Donate Now</a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Email</h5>
+                    <p>Testimonyassembly@yahoo.com</p>
+                    <h5>Address</h5>
+                    <p>49, Heaton Way, Romford, RM3 7EU</p>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <button class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 Testimony Assembly Church</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
