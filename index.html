@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grace Community Church</title>
+  <meta name="description" content="Grace Community Church — worship, community, and service.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Grace Community Church</a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="hamburger"></span>
+      </button>
+      <nav id="primaryNav" class="primary-nav" role="navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#sermons">Sermons</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Welcome to Testimony Assembly Church</h1>
+          <p>Join us for worship, community, and service. All are welcome.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#services">Plan a Visit</a>
+            <a class="btn btn-outline" href="#contact">Contact Us</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/hero.jpg" alt="Congregation worshipping" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container section about">
+      <div class="grid">
+        <div>
+          <h2>About Us</h2>
+          <p>Testimony Assembly Church is a welcoming community rooted in faith and service. We gather for worship, encourage spiritual growth, and serve our neighbours through outreach programs.</p>
+          <p><strong>Sunday Worship</strong> — 10:00 AM • <strong>Wednesday Bible Study</strong> — 7:00 PM</p>
+        </div>
+        <div class="card">
+          <h3>Our Mission</h3>
+          <p>To love God, love people, and make disciples. We invest in families, youth, seniors, and community outreach.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2>Services & Ministries</h2>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Worship</h3>
+            <p>Contemporary and traditional services that focus on scripture and praise.</p>
+          </article>
+          <article class="service-card">
+            <h3>Children & Youth</h3>
+            <p>Safe, fun, and faith-building programs for children and teens.</p>
+          </article>
+          <article class="service-card">
+            <h3>Community Outreach</h3>
+            <p>Food drives, volunteering, and events reaching our neighbours.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="section events">
+      <div class="container">
+        <h2>Upcoming Events</h2>
+        <ul class="events-list">
+          <li>
+            <time datetime="2025-12-20">Dec 20, 2025</time> — Christmas Concert
+          </li>
+          <li>
+            <time datetime="2025-04-05">Apr 5, 2025</time> — Community Lunch
+          </li>
+          <li>
+            <time datetime="2025-06-14">Jun 14, 2025</time> — Youth Retreat
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="sermons" class="section sermons">
+      <div class="container">
+        <h2>Recent Sermons</h2>
+        <div class="sermon-grid">
+          <article class="sermon">
+            <h3>Faith & Action</h3>
+            <p>Short excerpt from the sermon. <a href="#">Listen</a></p>
+          </article>
+          <article class="sermon">
+            <h3>Grace in Daily Life</h3>
+            <p>Short excerpt from the sermon. <a href="#">Watch</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-inner">
+        <div>
+          <h2>Contact Us</h2>
+          <p>Have questions or want to visit? Reach out — we'd love to connect.</p>
+          <address>
+            Grace Community Church<br>
+            123 Faith Ave, Springfield<br>
+            Email: <a href="mailto:info@gracechurch.org">info@gracechurch.org</a>
+          </address>
+          <p><strong>Office Hours:</strong> Mon–Fri 9:00–16:00</p>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+          <label>
+            <span class="label-text">Your name</span>
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            <span class="label-text">Email</span>
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            <span class="label-text">Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Grace Community Church • All rights reserved.</p>
+      <p class="small">Built with ❤️ — <a href="#">Privacy</a> · <a href="#">Accessibility</a></p>
+    </div>
+  </footer>
+</body>
+</html>
