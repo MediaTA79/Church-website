@@ -1,1 +1,1 @@
-Testiomny Assembly church
+Testimony Assembly church
