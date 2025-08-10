@@ -2,6 +2,10 @@ body {
     scroll-behavior: smooth;
 }
 
+nav .navbar-brand img {
+  border-radius: 50%;
+}
+
 /* Hero Section Styling */
 #hero {
     background: url('https://source.unsplash.com/1600x900/?church,sunset') center/cover no-repeat;
@@ -20,3 +24,8 @@ body {
 #pastor img {
     border: 5px solid white;
 }
+#offering {
+    border-top: 3px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.05);
+}
+
