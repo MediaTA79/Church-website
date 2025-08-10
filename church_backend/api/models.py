@@ -35,3 +35,6 @@ class Pastor(models.Model):
     bio = models.TextField(blank=True)
     image_url = models.URLField(blank=True, null=True)
     contact_email = models.EmailField(blank=True, null=True)
+
+    def __str__(self):
+        return f"Pastor {self.name} created"
