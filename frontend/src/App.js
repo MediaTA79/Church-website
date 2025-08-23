@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Hero from "./components/Hero";
 import Pastor from "./components/Pastor";
-import EventsCarousel from "./components/Events";
+import Events from "./components/Events";
 import ContactForm from "./components/ContactForm";
 import MemberForm from "./components/MemberForm";
+import ChurchNavbar from "./components/Navbar";
 
 const API = process.env.REACT_APP_API || "http://localhost:8000/api";
 
@@ -22,13 +23,15 @@ function App() {
       .then((data) => setEvents(data))
       .catch(console.error);
   }, []);
-
+  
+  console.log("App rendering", pastor, events);
   return (
     <div>
+      <ChurchNavbar />
       <Hero />
       <div className="container my-5">
         <Pastor pastor={pastor} />
-        <EventsCarousel events={events} />
+        <Events events={events} />
         <MemberForm apiBase={API} />
         <ContactForm apiBase={API} />
       </div>

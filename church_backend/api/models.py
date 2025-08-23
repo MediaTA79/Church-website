@@ -5,7 +5,8 @@ class Event(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()
     date = models.DateTimeField()
-    image_url = models.URLField()
+    event_image = models.ImageField(upload_to='images', null=True, blank=True)
+    # image_url = models.URLField()
 
     def __str__(self):
         return self.title
@@ -33,7 +34,7 @@ class Inquiry(models.Model):
 class Pastor(models.Model):
     name = models.CharField(max_length=200)
     bio = models.TextField(blank=True)
-    image_url = models.URLField(blank=True, null=True)
+    image = models.ImageField(upload_to='images', blank=True, null=True)
     contact_email = models.EmailField(blank=True, null=True)
 
     def __str__(self):
