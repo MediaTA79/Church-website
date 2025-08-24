@@ -1,20 +1,27 @@
-import React from "react";
+import React from 'react';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
-export default function Pastor({ pastor }){
-  // if(!pastor) return null;
-  if (!pastor) return <p className="text-center">Loading pastor info....</p>
+export default function Pastor({ pastor }) {
+  if (!pastor) return null;
+
   return (
-    <section id="pastor" className="my-5">
-      <h2 className="text-center mb-4">Meet Our Pastor</h2>
-      <div className="row align-items-center">
-        <div className="col-md-4 text-center">
-          <img src={pastor.image} alt={pastor.name} className="img-fluid rounded-circle shadow" />
-        </div>
-        <div className="col-md-8">
-          <h4>{pastor.name}</h4>
-          <p>{pastor.bio}</p>
-        </div>
-      </div>
+    <section id="pastor" className="py-5">
+      <Container>
+        <h2 className="text-center mb-4">Our Pastor</h2>
+        <Row className="justify-content-center">
+          <Col md={6}>
+            <Card className="shadow-sm">
+              {pastor.image && (
+                <Card.Img variant="top" src={pastor.image} alt={pastor.name} />
+              )}
+              <Card.Body>
+                <Card.Title>{pastor.name}</Card.Title>
+                <Card.Text>{pastor.bio}</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 }
