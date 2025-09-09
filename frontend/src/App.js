@@ -9,7 +9,7 @@ import ChurchNavbar from "./components/Navbar";
 const API = process.env.REACT_APP_API || "http://localhost:8000/api";
 
 function App() {
-  const [pastor, setPastor] = useState(null);
+  const [pastor, setPastor] = useState();
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
